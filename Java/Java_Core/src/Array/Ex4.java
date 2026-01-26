@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -18,6 +19,22 @@ public class Ex4 {
 		{
 			System.out.print(mangso[i] +" ");
 		}
+		System.out.println("");
+		Arrays.sort(mangso); // sắp xếp mảng
+		System.out.println("mảng sau khi sắp xếp tăng dần");
+		for (int i=0;i<n;i++)
+		{
+			System.out.print(mangso[i] +" ");
+		}
+		System.out.println("");
+		System.out.println("Min = "+ mangso[0] +" ");
+		System.out.println("Max = "+ mangso[n-1] +" ");
+		
+	    
+		System.out.println("bạn muốn tìm kiếm phân tử lớn thứ ????");
+	    int phantumax=nhap.nextInt();
+	    System.out.print("Phần tử lớn thứ " + phantumax+ " là "+ mangso[n-phantumax] +" ");
+	
 	}
 
 }
