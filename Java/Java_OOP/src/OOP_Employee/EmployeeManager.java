@@ -226,49 +226,105 @@ public class EmployeeManager {
 	}
 	public void timkiemExprience(String id)
 	{
+		boolean tk=false;
 		for(Employee emp : nhanvien)
 		{
 			if(emp instanceof Experience && emp.getId().equalsIgnoreCase(id))
 			{
+				tk=true;
 				Experience ex =(Experience) emp;
 				ex.ShowInfo();
 			}
 				
 		}
+		if(tk==false)
+		{
+			System.out.println("k tìm thấp nhân viên có kinh nghiệm");
+		}
 	}
 	public void timkiemFrehser(String id)
 	{
+		boolean tk=false;
 		for(Employee emp : nhanvien)
 		{
 			if(emp instanceof Fresher && emp.getId().equalsIgnoreCase(id))
 			{
+				tk=true;
 				Fresher fr =(Fresher) emp;
 				fr.ShowInfo();
 			}
 				
 		}
+		if(tk==false)
+		{
+			System.out.println("k tìm thấp nhân viên fresher");
+		}
 	}
 	public void timkiemIntern(String id)
 	{
+		boolean tk=false;
 		for(Employee emp : nhanvien)
 		{
 			if(emp instanceof Intern && emp.getId().equalsIgnoreCase(id))
 			{
+				tk=true;
 				Intern it =(Intern) emp;
 				it.ShowInfo();
 			}
 				
 		}
+		if(tk==false)
+		{
+			System.out.println("k tìm thấp nhân viên intern");
+		}
 	}
-	public void hienthiall()
+	public void hienthiIntern()
 	{
+		boolean kiemtra=false;
 		for(Employee emp : nhanvien)
 		{
 			if(emp instanceof Intern )
 			{
+				kiemtra=true;
 				Intern it =(Intern) emp;
 				it.ShowInfo();
 			}
 		}
+		if(kiemtra==false)
+		{
+			System.out.println("k có nhân viên intern");
+		}
+	}
+	public void hienthiFresher() {
+	    boolean kiemtra = false;
+	    for (Employee emp : nhanvien) {
+	        // Kiểm tra xem đối tượng có phải là Fresher hay không
+	        if (emp instanceof Fresher) {
+	            kiemtra = true;
+	            // Phải ép kiểu về đúng lớp Fresher
+	            Fresher fresher = (Fresher) emp; 
+	            fresher.ShowInfo();
+	        }
+	    }
+	    
+	    if (!kiemtra) {
+	        System.out.println("Không có nhân viên Fresher nào trong danh sách.");
+	    }
+	}
+	public void hienthiExperience() {
+	    boolean kiemtra = false;
+	    for (Employee emp : nhanvien) {
+	        // Kiểm tra đúng kiểu Experience
+	        if (emp instanceof Experience) {
+	            kiemtra = true;
+	            // Ép kiểu về Experience để gọi phương thức
+	            Experience exp = (Experience) emp;
+	            exp.ShowInfo();
+	        }
+	    }
+	    
+	    if (!kiemtra) {
+	        System.out.println("Không có nhân viên Experience nào.");
+	    }
 	}
 }

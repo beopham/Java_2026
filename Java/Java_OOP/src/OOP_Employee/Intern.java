@@ -53,7 +53,7 @@ public class Intern extends Employee {
 	    System.out.println("Ngày sinh: " + getBirthDay());
 	    System.out.println("Số điện thoại: " + getPhone());
 	    System.out.println("Email: " + getEmail());
-	    System.out.println("Loại nhân viên: Intern (2)");
+	    System.out.println("Loại nhân viên: Intern (1)");
 
 	 // 2. Gọi các Getter của chính lớp Intern (Thay vì dùng this.majors)
 	    System.out.println("Chuyên ngành: " + getMajors());
