@@ -1,4 +1,4 @@
-package oop_baitapnhieu_canbo_1;
+package oop_baitapnhieu_quanlicanbo_1;
 
 public class Nhanvien extends CanBo {
 
