@@ -1,0 +1,13 @@
+create database sinhvien_titv;
+
+use sinhvien_titv;
+create table sinhvien(
+id_sv int not null auto_increment,
+ten varchar(200) not null,
+tuoi int not null,
+diachi varchar(200) not null,
+ngaysinh date not null,
+constraint pk_id_sv primary key(id_sv)
+);
+
+select * from sinhvien
