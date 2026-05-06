@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table nha</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <style>
+      .khung {
+        width: 800px;
+        height: 500px;
+        background-color: aqua;
+        margin: 0px auto;
+        padding-top: 20px; /* Đẩy nội dung bên trong khung xuống 20px */
+      }
+      table {
+        cursor: pointer;
+
+        width: 450px;
+      }
+      table tr td {
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="khung">
+      <h3 class="text-center">Thông Tin Sinh Viên</h3>
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr class="">
+            <th>MSSV</th>
+            <th>Họ Tên</th>
+            <th>Ngày Sinh</th>
+            <th>Chuyên Ngành</th>
+            <th>GPA</th>
+            <th>Ảnh</th>
+            <th>Hành Động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>22IT123</td>
+            <td>Phạm Văn Nam</td>
+            <td>20/05/2003</td>
+            <td>Kỹ thuật phần mềm</td>
+            <td>3.6</td>
+            <td>
+              <img
+                src="https://via.placeholder.com/40"
+                alt="Avatar"
+                class="rounded-circle"
+              />
+            </td>
+            <td>
+               <button class="btn btn-warning btn-sm"><a href="">Sửa</a></button>
+              <button class="btn btn-danger btn-sm"><a href="">Xóa</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>22IT124</td>
+            <td>Nguyễn Văn A</td>
+            <td>12/10/2003</td>
+            <td>Hệ thống thông tin</td>
+            <td>3.2</td>
+            <td>
+              <img
+                src="https://via.placeholder.com/40"
+                alt="Avatar"
+                class="rounded-circle"
+              />
+            </td>
+            <td>
+            <button class="btn btn-warning btn-sm"><a href="">Sửa</a></button>
+              <button class="btn btn-danger btn-sm"><a href="">Xóa</a></button>
+            </td>
+          </tr>
+          <tr>
+            <td>22IT125</td>
+            <td>Lê Thị B</td>
+            <td>05/02/2003</td>
+            <td>An toàn thông tin</td>
+            <td>3.8</td>
+            <td>
+              <img
+                src="https://via.placeholder.com/40"
+                alt="Avatar"
+                class="rounded-circle"
+              />
+            </td>
+            <td>
+              <button class="btn btn-warning btn-sm"><a href="">Sửa</a></button>
+              <button class="btn btn-danger btn-sm"><a href="">Xóa</a></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="btn btn-danger">Đăng Nhập</button>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

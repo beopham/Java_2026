@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+    <p class="nam" id="chunam">  Phạm văn  nam</p>
+
+     <button id="btn-do" class="btn btn-danger" o>Nút đỏ</button>
+     
+     <button id="btn-xanh" class="btn btn-primary" >Nút xanh</button>
+
+      <script>
+        let chunam=document.getElementById('chunam');
+        let nutdo=document.getElementById('btn-do');
+                let nutxanh=document.getElementById('btn-xanh');
+
+                nutdo.addEventListener('click',function()
+                {
+                     chunam.innerHTML="nam ơi cố lên";
+                       chunam.style.color="red";
+                });
+                    nutxanh.addEventListener('click',function()
+                {
+                     chunam.innerHTML="nam ơi cố lên nha";
+                     chunam.style.color="blue";
+                });
+      </script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
